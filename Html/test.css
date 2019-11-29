@@ -1,0 +1,36 @@
+#anh-logo{
+    border-radius: 10%;
+    border: solid 1px black;
+   
+    margin-top: 5px;
+    background-size: contain;
+    height: 80px;
+    width: 5%; 
+    display: inline-block;
+    box-sizing: border-box;
+}
+#top-page{
+    
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+}
+#user-input{
+    width: 50%;
+    display: inline-block;
+    align-content: center;
+}
+
+#user-input{
+    width: 30%;
+}
+.button-top{
+    margin-left: 1%;
+    width: auto;
+    display: inline-block;
+    border: black 1px;
+}
+#dangki{
+    margin-left: 50px;
+}
