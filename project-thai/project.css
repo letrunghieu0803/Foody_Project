@@ -22,7 +22,7 @@ input{
     box-sizing: border-box;
     /* height: 278px; */
     height: 35%;
-    margin-right: 2%;
+    margin-right: 0%;
     margin-bottom: 0%;
 }
 
@@ -42,13 +42,17 @@ input:focus{
 }
 
 .radius{
-    height: 1rem;
+    height: 1.5rem;
     width: 13rem;
 }
 
-.khung{
-    margin-bottom: 15%;
-    margin-top: 15%;
-    margin-left: 15%;
-    margin-right: 15%;
+#khung{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: black 2px solid;
+}
+p{
+    font-family: Helvetica;
 }
