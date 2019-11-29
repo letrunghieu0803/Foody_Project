@@ -31,3 +31,140 @@
     display: inline-block;
     border: black 1px;
 }
+
+//
+h1{
+    transform: translate( 25%, -5%);
+}
+input{
+    border-radius: 5px;
+    
+}
+.hoten{display: inline-block  ;
+
+}
+#banner{
+    background-image: url(logoproject.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 645px;
+    width: 600px;
+    display: inline-block;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+#login{
+    width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+    box-sizing: border-box;
+    /* height: 278px; */
+    height: 35%;
+    margin-right: 2%;
+    margin-bottom: 0%;
+}
+
+.form{
+    transform: translate( 15%, -5%);
+    
+}
+
+p{
+    margin-block-end: 0em;
+}
+
+
+input:focus{
+    border: black solid 1px;
+}
+
+#logo{
+    /* margin-left: 125px; */
+    margin-left: 23%;
+}
+
+.radius{
+    height: 1rem;
+    width: 13rem;
+    display: inline-block;
+}
+
+#khung{
+    width: 100%;
+    border: black 2px solid;
+    margin-top: 3%;
+}
+#dangki{
+    margin-left:50%;
+}
+
+//
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="project.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="khung">
+        <div id="banner"></div>
+        <div id="login">
+            <img src="mindxlogo.png" id="logo">
+            <h1>Join Thái Thảo Hiếu</h1>
+
+            <br>
+            <div class="form">
+                <div>
+                    <div class="hoten">
+                        <p>Họ</p>
+                        <input type="text" id="firstname" name="firstname"  value="" class="radius"
+                            required />
+                    </div>
+                    <div class="hoten">
+                        <p>Tên</p>
+                        <input type="text" id="lastname" name="lastname"  value="" class="radius"
+                        required />
+                    </div>
+                </div>
+
+                <p>Giới tính</p>
+                <form action="/action_page.php" class="ho">
+                    <input type="radio" name="sex" value="male" checked> Male
+                    <input type="radio" name="sex" value="female" checked> Female
+                    <input type="radio" name="sex" value="other" checked> Other<br><br>
+                </form>
+                <div class="space">
+                    <p>Email</p>
+                    <input id="email" type="text"  class="radius" required>
+                </div>
+                <div>
+                    <p>Tên đăng nhập</p>
+                    <input id="name" type="text"  class="radius" required>
+                </div>
+                <div>
+                    
+                    <p>Mật khẩu</p>
+                    <input type="password" minlength="8"  class="radius" required>
+                </div>
+                <div>
+                    
+                    <p>Nhập lại mật khẩu</p>
+                    <input type="password" minlength="8"  class="radius" required>
+                </div>
+                <br>
+                <div>
+                    <button id="dangki">Đăng ký</button>
+                </div>
+
+        </div>
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+
+</html>
