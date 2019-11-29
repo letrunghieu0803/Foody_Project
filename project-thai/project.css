@@ -1,5 +1,5 @@
 h1{
-    text-align: center;
+    transform: translate( 25%, -5%);
 }
 input{
     border-radius: 5px;
@@ -12,14 +12,18 @@ input{
     height: 645px;
     width: 600px;
     display: inline-block;
+    margin-top: 0%;
+    margin-left: 0%;
 }
 #login{
     width: 40%;
     display: inline-block;
     margin-left: 5%;
     box-sizing: border-box;
-    height: 278px;
-    
+    /* height: 278px; */
+    height: 35%;
+    margin-right: 2%;
+    margin-bottom: 0%;
 }
 
 .form{
@@ -33,10 +37,18 @@ input:focus{
 }
 
 #logo{
-    margin-left: 125px;
+    /* margin-left: 125px; */
+    margin-left: 23%;
 }
 
 .radius{
     height: 1rem;
     width: 13rem;
+}
+
+.khung{
+    margin-bottom: 15%;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
