@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+}
+input{
+    border-radius: 5px;
+    
+}
+#banner{
+    background-image: url(logoproject.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 645px;
+    width: 600px;
+    display: inline-block;
+}
+#login{
+    width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+    box-sizing: border-box;
+    height: 278px;
+    
+}
+
+.form{
+    transform: translate( 15%, -5%);
+    
+}
+
+
+input:focus{
+    border: black solid 1px;
+}
+
+#logo{
+    margin-left: 125px;
+}
+
+.radius{
+    height: 1rem;
+    width: 13rem;
+}

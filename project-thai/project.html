@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="project.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="banner">
+    </div>
+    <div id="login">
+        <img src="mindxlogo.png" id="logo">
+        <h1>Join Thái Thảo Hiếu</h1>
+
+        <br>
+        <div class="form">
+            <div>
+                <input type="text" id="firstname" name="firstname" placeholder="Họ" value="" class="radius"
+                    required />
+                <input type="text" id="lastname" name="lastname" placeholder="Tên" value="" class="radius"
+                    required />
+            </div>
+
+            <p>Giới tính</p>
+            <form action="/action_page.php" class="ho">
+                <input type="radio" name="sex" value="male" checked> Male
+                <input type="radio" name="sex" value="female" checked> Female
+                <input type="radio" name="sex" value="other" checked> Other<br><br>
+            </form>
+            <div class="space">
+                <p>email</p>
+                <input id="email" type="text"  class="radius" required>
+            </div>
+            <div>
+                <p>Tên đăng nhập</p>
+                <input id="name" type="text"  class="radius" required>
+            </div>
+            <div>
+                
+                <p>Mật khẩu</p>
+                <input type="password" minlength="8"  class="radius" required>
+            </div>
+            <div>
+                
+                <p>Nhập lại mật khẩu</p>
+                <input type="password" minlength="8"  class="radius" required>
+            </div>
+            <br>
+            <div>
+                <button>Đăng ký</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
