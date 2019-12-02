@@ -1,65 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="test.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="test.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/51b682b03f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-        <div class="container">
-                <h2>Freetuts.net hướng dẫn tạo Filter Table</h2>
-               
-                <input type="text" id="myInput" placeholder="Search for Club.." title="Type in a name of Club">
-               
-                <table id="myTable">
-                  <tr class="header">
-                    <th style="width:60%;">Club</th>
-                    <th style="width:40%;">Country</th>
-                  </tr>
-                  <tr>
-                    <td>Arsenal</td>
-                    <td>England</td>
-                  </tr>
-                  <tr>
-                    <td>Atletico Madrid</td>
-                    <td>Spain</td>
-                  </tr>
-                  <tr>
-                    <td>Barcelona</td>
-                    <td>Spain</td>
-                  </tr>
-                  <tr>
-                    <td>Liverpool</td>
-                    <td>England</td>
-                  </tr>
-                  <tr>
-                    <td>Real Madrid</td>
-                    <td>Spain</td>
-                  </tr>
-                  <tr>
-                    <td>Bayern Munich</td>
-                    <td>Germany</td>
-                  </tr>
-                  <tr>
-                    <td>Borussia Dortmund</td>
-                    <td>Germany</td>
-                  </tr>
-                  <tr>
-                    <td>Paris Saint-Germain</td>
-                    <td>France</td>
-                  </tr>
-                  <tr>
-                    <td>Manchester United</td>
-                    <td>England</td>
-                  </tr>
-                  <tr>
-                    <td>Monaco</td>
-                    <td>France</td>
-                  </tr>
-                </table>
+  <!-- Phần đầu trang -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FoodTHT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse custom" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+          <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Nhập tên món ăn/địa điểm ăn"
+            aria-label="Search">
+          <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
+        </form>
+        <li class="nav-item top-style">
+          <a class="nav-link" href="#">Chia sẻ trang</a>
+        </li>
+        <li class="nav-item dropdown top-style">
+          <a id="dangtai-button" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Đăng tải thông tin
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Chia sẻ bài viết</a>
+            <a class="dropdown-item" href="#">Chia sẻ về món ăn/ địa điểm ăn</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Góp ý</a>
+          </div>
+        </li>
+      </ul>
+      <a id="dangnhap-button" class="nav-link disabled" href="#">Đăng nhập</a>
+    </div>
+  </nav>
+
+  <!-- Ảnh chuyển -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+          class="d-block " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1491435154725-690cead8920e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1006&q=80"
+          class="d-block " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+          class="d-block " alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 phantach">
+        <p class="chu-khung"> Bài viết mới</p>
+        <table>
+          <tr>
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="http://thuthuat123.com/uploads/2018/01/27/Avatar-dep-nhat-52_112148.jpg" class="rounded mr-2"
+                  alt="...">
+                <strong class="mr-auto">Tiêu đề</strong>
+                <small>Tác giả</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-    <script src="test.js"></script>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+          </tr>
+          <hr>
+          <tr>
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="http://thuthuat123.com/uploads/2018/01/27/Avatar-dep-nhat-52_112148.jpg" class="rounded mr-2"
+                  alt="...">
+                <strong class="mr-auto">Tiêu đề</strong>
+                <small>Tác giả</small>
+                <button type="button" class="ml-2 mb-1 close bvyeuthich" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+          </tr>
+          <hr>
+          <tr>
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="http://thuthuat123.com/uploads/2018/01/27/Avatar-dep-nhat-52_112148.jpg" class="rounded mr-2"
+                  alt="...">
+                <strong class="mr-auto">Tiêu đề</strong>
+                <small>Tác giả</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                  <span aria-hidden="true" class="bvyeuthich"></span>
+                </button>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+          </tr>
+        </table>
+
+      </div>
+      <div class="col-6 phantach">
+        <div class="monan-table">
+          <p class="chu-khung">Món ăn gợi ý ngẫu nhiên</p>
+          <img class="anh-table"
+            src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+            alt="">
+          <img class="anh-table"
+            src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+            alt="">
+          <img class="anh-table"
+            src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+            alt="">
+        </div>
+        <hr>
+        <div class="monan-table">
+          <p class="chu-khung">Món ăn mới cập nhật</p>
+          <img class="anh-table"
+            src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+            alt="">
+          <img class="anh-table"
+            src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+            alt="">
+          <img class="anh-table"
+            src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Phần yêu thích -->
+  <div id="favorite" class="container">
+    <div class="row">
+      <div class="col-6">
+        <p>Bài viết được yêu thích nhất</p>
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="http://thuthuat123.com/uploads/2018/01/27/Avatar-dep-nhat-52_112148.jpg" class="rounded mr-2"
+              alt="...">
+            <strong class="mr-auto">Tiêu đề</strong>
+            <small>Tác giả</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true" class="bvyeuthich"></span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p>Món ăn được yêu thích nhất</p>
+        <img src="http://thuthuat123.com/uploads/2018/01/27/Avatar-dep-nhat-52_112148.jpg" alt="" class="anhyeuthich">
+        <small class="chuthich">Tác giả</small>
+      </div>
+      <div class="col">
+        <p>Địa điểm ăn được yêu thích nhất</p>
+        <img src="http://thuthuat123.com/uploads/2018/01/27/Avatar-dep-nhat-52_112148.jpg" alt="" class="anhyeuthich">
+        <small class="chuthich">Tác giả</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- /* cuoitrang */ -->
+  <div id="bot-page">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Home</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Profile</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+          aria-controls="nav-contact" aria-selected="false">Contact</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+    </div>
+  </div>
+
+
+
+
+  <script src="test.js"></script>
 </body>
+
 </html>

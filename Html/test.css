@@ -123,3 +123,7 @@ p {
     height: 145px;
     display: inline-block;
 }
+
+#nav-top{
+    display: inline-block;
+}
