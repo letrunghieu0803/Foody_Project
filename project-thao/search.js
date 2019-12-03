@@ -1,5 +1,5 @@
-const button = document.getElementById("button")
-const search = document.getElementById("search")
+const button = document.getElementById("search-button")
+const search = document.getElementById("search-input")
 const post = document.getElementById("post")
 
 button.addEventListener("click",()=>{
