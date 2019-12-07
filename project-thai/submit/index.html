@@ -15,71 +15,87 @@
     <div class="container">
         <div class="row">
             <div class="col-3">
-                1 of 3
             </div>
-            <div class="col-6">
+            <div class="col-8">
                 <h2>Thêm địa điểm</h2>
                 <p>Hãy chia sẻ địa điểm yêu thích của bạn đến với mọi người nào</p>
                 <h4>Thông tin</h4>
                 <hr>
                 <form>
                     <div class="form-group row">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Tên địa điểm</label>
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Tên món</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                            <input type="text" class="form-control" id="name-submit" placeholder="">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabel" class="col-sm-2 col-form-label">Địa chỉ</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                            <input type="text" class="form-control" id="place-submit" placeholder="">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Số điện thoại</label>
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">SĐT quán</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="colFormLabel" placeholder="">
+                            <input type="number" class="form-control" id="phone-submit" placeholder="">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Website</label>
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                            <input type="mail" class="form-control" id="mail-submit" placeholder="">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Địa chỉ</label>
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Thời gian mở</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="colFormLabel" placeholder="">
+                            <input type="text" class="form-control" id="content-submit" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Giá cả </label>
+                        <div class="col-sm-10">
+                            <input type="mail" class="form-control" id="price-submit" placeholder="">
                         </div>
                     </div>
                     <form>
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">ảnh hoặc video</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <label for="exampleFormControlFile1">Tệp đính kèm</label>
+                            <input type="file" class="form-control-file" id="file-submit">
                         </div>
                     </form>
-                    <button class="submit">Submit</button>
+                    <button id="submit-button" class="submit">Submit</button>
 
 
                 </form>
             </div>
             <div class="col-3">
-                3 of 3
+
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAIjpQV4e34J2W7my3MAfxwAnv6iIVUujA",
+            authDomain: "demo2-e2dad.firebaseapp.com",
+            databaseURL: "https://demo2-e2dad.firebaseio.com",
+            projectId: "demo2-e2dad",
+            storageBucket: "demo2-e2dad.appspot.com",
+            messagingSenderId: "662795888806",
+            appId: "1:662795888806:web:b49983f63afee7ae136c67"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
     <script src="upload.js"></script>
 </body>
 

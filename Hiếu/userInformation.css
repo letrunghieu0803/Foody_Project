@@ -1,0 +1,37 @@
+.form-group {
+    margin-left: 5%;
+    display: block;
+    width: auto;
+}
+
+.form-control3 {
+    width: 80%;
+    background-color: #A8A2A1;
+}
+
+.gioitinh {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+#picture-info {
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    width: 540px;
+    height: 800px;
+}
+
+#update-information {
+    margin-left: 70%;
+}
+
+#avatar {
+    border-radius: 100%;
+    margin-left: 5%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-block-end: 2%;
+}
