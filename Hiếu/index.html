@@ -92,7 +92,11 @@
                 >Chia sẻ về món ăn/ địa điểm ăn</a
               >
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Góp ý</a>
+              <a
+                class="dropdown-item"
+                href="http://127.0.0.1:5500/Foody_Project/project-thao/post.html"
+                >Góp ý</a
+              >
             </div>
           </li>
         </ul>
@@ -255,23 +259,8 @@
           </table>
         </div>
         <div class="col-6 phantach">
-          <div class="monan-table">
+          <div class="monan-table" id="monan-table">
             <p class="chu-khung">Món ăn gợi ý ngẫu nhiên</p>
-            <img
-              class="anh-table"
-              src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-              alt=""
-            />
-            <img
-              class="anh-table"
-              src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-              alt=""
-            />
-            <img
-              class="anh-table"
-              src="https://images.unsplash.com/photo-1454944338482-a69bb95894af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-              alt=""
-            />
           </div>
           <hr />
           <div class="monan-table">
@@ -407,6 +396,27 @@
       </div>
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDQXh6G9dVBX0yV2Ikk6rN-wiLA1UyHAWo",
+        authDomain: "food-a9379.firebaseapp.com",
+        databaseURL: "https://food-a9379.firebaseio.com",
+        projectId: "food-a9379",
+        storageBucket: "food-a9379.appspot.com",
+        messagingSenderId: "308791585380",
+        appId: "1:308791585380:web:12061c47536db0d2df8d71"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
     <script src="test.js"></script>
   </body>
 </html>

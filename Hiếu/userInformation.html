@@ -64,15 +64,10 @@
     <!-- Phần đăng kí -->
     <div class="container">
         <div class="row">
-
             <div class="col-6">
-
                 <img id="picture-info"
                     src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=653&q=80"
                     alt="">
-
-
-
             </div>
             <div class="col-6">
                 <div>
@@ -81,49 +76,49 @@
                         alt="">
                 </div>
 
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Họ và tên</label>
-                    <input type="text" class="form-control form-control3" id="user-information-name"
-                        placeholder="Lê Văn A">
-                </div>
-                <div class="form-group ">
-                    <label for="exampleFormControlInput1">Giới tính</label>
-                    <form id="user-information-sex">
-                        <input type="radio" class="gioitinh" name="gender" value="male"> Nam </input>
-                        <input type="radio" class="gioitinh" name="gender" value="female"> Nữ </input>
-                        <input type="radio" class="gioitinh" name="gender" value="other"> Other </input>
-                    </form>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Ngày sinh</label>
-                    <input type="birthday" class="form-control form-control3" id="user-information-birthday"
-                        placeholder="dd/mm/yyyy">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control form-control3" id="user-information-email"
-                        placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Địa chỉ nơi ở</label>
-                    <input type="text" class="form-control form-control3" id="user-information-place"
-                        placeholder="Đông Anh - Hà Nội">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Số điện thoại</label>
-                    <input type="number" class="form-control form-control3" id="user-information-phone"
-                        placeholder="0924558486">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Số CMND</label>
-                    <input type="number" class="form-control form-control3" id="user-information-CMND"
-                        placeholder="01324588732">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Ngày tạo tài khoản</label>
-                    <p id="date-created"></p>
-                </div>
-                <button id="update-information">Cập nhật</button>
+                <form id='mainForm'>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Họ và tên</label>
+                        <input type="text" class="form-control form-control3" id="user-information-name"
+                            placeholder="Lê Văn A">
+                    </div>
+                    <div class="form-group submit-gender">
+                        <label for="exampleForsmControlInput1">Giới tính</label>
+                            <input type="radio" class="gioitinh" name="gender" value="male"> Nam </input>
+                            <input type="radio" class="gioitinh" name="gender" value="female"> Nữ </input>
+                            <input type="radio" class="gioitinh" name="gender" value="other"> Other </input>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Ngày sinh</label>
+                        <input type="birthday" class="form-control form-control3" id="user-information-birthday"
+                            placeholder="dd/mm/yyyy">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control form-control3" id="user-information-email"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Địa chỉ nơi ở</label>
+                        <input type="text" class="form-control form-control3" id="user-information-place"
+                            placeholder="Đông Anh - Hà Nội">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Số điện thoại</label>
+                        <input type="number" class="form-control form-control3" id="user-information-phone"
+                            placeholder="0924558486">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Số CMND</label>
+                        <input type="number" class="form-control form-control3" id="user-information-CMND"
+                            placeholder="01324588732">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Ngày tạo tài khoản</label>
+                        <p id="date-created"></p>
+                    </div>
+                    <button id="update-information">Cập nhật</button>
+                </form>
             </div>
         </div>
 
