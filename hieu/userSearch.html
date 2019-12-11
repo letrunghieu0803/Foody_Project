@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/51b682b03f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="userInformation.css">
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="userSearch.css" />
+    <link rel="stylesheet" href="test.css" />
     <title>Document</title>
 </head>
 
@@ -62,69 +62,50 @@
     </nav>
 
     <!-- Phần đăng kí -->
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <img id="picture-info"
-                    src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=653&q=80"
-                    alt="">
-            </div>
-            <div class="col-6">
-                <div>
-                    <img id="avatar"
-                        src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="">
-                </div>
+    <div class="container bodyk">
+        <div id="search" class="row">
+            <div class="col-12">
+                <div id="banhmy">
 
-                <form id='mainForm'>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Họ và tên</label>
-                        <input type="text" class="form-control form-control3" id="user-information-name"
-                            placeholder="Lê Văn A">
-                    </div>
-                    <div class="form-group submit-gender">
-                        <label for="exampleForsmControlInput1">Giới tính</label>
-                            <input type="radio" class="gioitinh" name="gender" value="male"> Nam </input>
-                            <input type="radio" class="gioitinh" name="gender" value="female"> Nữ </input>
-                            <input type="radio" class="gioitinh" name="gender" value="other"> Other </input>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Ngày sinh</label>
-                        <input type="birthday" class="form-control form-control3" id="user-information-birthday"
-                            placeholder="dd/mm/yyyy">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control form-control3" id="user-information-email"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Địa chỉ nơi ở</label>
-                        <input type="text" class="form-control form-control3" id="user-information-place"
-                            placeholder="Đông Anh - Hà Nội">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Số điện thoại</label>
-                        <input type="number" class="form-control form-control3" id="user-information-phone"
-                            placeholder="0924558486">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Số CMND</label>
-                        <input type="number" class="form-control form-control3" id="user-information-CMND"
-                            placeholder="01324588732">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Ngày tạo tài khoản</label>
-                        <p id="date-created"></p>
-                    </div>
-                    <button id="update-information">Cập nhật</button>
-                </form>
+                </div>
             </div>
         </div>
-
-
     </div>
 
+
+
+
+    <!-- /* cuoitrang */ -->
+    <div id="bot-page">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                    href="file:///C:/Users/PC/Desktop/Foody_Project/hieu/index.html" role="tab" aria-controls="nav-home"
+                    aria-selected="true">Home</a>
+                <li class="nav-item dropdown top-style">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="color: red;">
+                        About us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.facebook.com/le.trunghieu.83" style="color: red;">Lê
+                            Trung
+                            Hiếu</a>
+                        <a class="dropdown-item" href="https://www.facebook.com/thao.nguyentrung.1048"
+                            style="color: red;">Nguyễn
+                            Trung Thảo</a>
+                        <a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100019957505763"
+                            style="color: red;">Trần Thái</a>
+                    </div>
+                </li>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+        </div>
+    </div>
 
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
     <script>
@@ -142,7 +123,8 @@
         firebase.initializeApp(firebaseConfig);
     </script>
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
-    <script src="userInformation.js"></script>
+    <script src="timkiem.js"></script>
+    <script src="userSearch.js"></script>
 </body>
 
 </html>

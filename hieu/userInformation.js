@@ -5,7 +5,9 @@ const userEmail = document.getElementById("user-information-email");
 const userPlace = document.getElementById("user-information-place");
 const userPhone = document.getElementById("user-information-phone");
 const userCMND = document.getElementById("user-information-CMND");
+const userSex = document.getElementById("user-information-gioitinh");
 const mainForm = document.querySelector("#mainForm");
+
 
 const gender1 = document.querySelector("#gender1");
 const gender2 = document.querySelector("#gender2");
@@ -20,11 +22,12 @@ mainForm.addEventListener("click", event => {
   const newRecord = {
     name: userInformationName.value,
     ngay: userBirthday.value,
-    gioitinh: gender1.value || gender2.value || gender3.value,
+    gioitinh: userSex.value,
     email: userEmail.value,
     diadiem: userPlace.value,
     sdt: userPhone.value,
-    cmnd: userCMND.value
+    cmnd: userCMND.value,
+    updateTime: new date(),
   };
   userInfo
     .add(newRecord)

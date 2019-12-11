@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -17,9 +19,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/51b682b03f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="userSearch.css">
-    <link rel="stylesheet" href="test.css">
-    <title>Document</title>
 </head>
 
 <body>
@@ -34,7 +33,8 @@
         <div class="collapse navbar-collapse custom" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="file:///C:/Users/PC/Desktop/Foody_Project/hieu/index.html">Home <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <form class="form-inline my-2 my-lg-0">
                     <input id="search-input" class="form-control mr-sm-2" type="search"
@@ -42,7 +42,7 @@
                     <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
                 </form>
                 <li class="nav-item top-style">
-                    <a class="nav-link" href="#">Chia sẻ trang</a>
+                    <a class="nav-link" href="https://www.facebook.com/le.trunghieu.83">Fanpage</a>
                 </li>
                 <li class="nav-item dropdown top-style">
                     <a id="dangtai-button" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -50,10 +50,14 @@
                         Đăng tải thông tin
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Chia sẻ bài viết</a>
-                        <a class="dropdown-item" href="#">Chia sẻ về món ăn/ địa điểm ăn</a>
+                        <a class="dropdown-item" href="">Chia sẻ bài viết cá nhân</a>
+                        <a class="dropdown-item"
+                            href="file:///C:/Users/PC/Desktop/Foody_Project/project-thai/submit/index.html">Chia sẻ về
+                            món ăn/ địa
+                            điểm ăn</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Góp ý</a>
+                        <a class="dropdown-item" href="http://127.0.0.1:5500/Foody_Project/project-thao/post.html">Góp
+                            ý</a>
                     </div>
                 </li>
             </ul>
@@ -61,34 +65,33 @@
         </div>
     </nav>
 
-    <!-- Phần đăng kí -->
-    <div class="container">
-        <div id="search" class="row">
-            <div class="col-12">
-            </div>
-        </div>
 
-
+    <div id="danhsach">
+        <ul></ul>
     </div>
 
-
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-            apiKey: "AIzaSyAIjpQV4e34J2W7my3MAfxwAnv6iIVUujA",
-            authDomain: "demo2-e2dad.firebaseapp.com",
-            databaseURL: "https://demo2-e2dad.firebaseio.com",
-            projectId: "demo2-e2dad",
-            storageBucket: "demo2-e2dad.appspot.com",
-            messagingSenderId: "662795888806",
-            appId: "1:662795888806:web:b49983f63afee7ae136c67"
+            apiKey: "AIzaSyDQXh6G9dVBX0yV2Ikk6rN-wiLA1UyHAWo",
+            authDomain: "food-a9379.firebaseapp.com",
+            databaseURL: "https://food-a9379.firebaseio.com",
+            projectId: "food-a9379",
+            storageBucket: "food-a9379.appspot.com",
+            messagingSenderId: "308791585380",
+            appId: "1:308791585380:web:12061c47536db0d2df8d71"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     </script>
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
-    <script src="userSearch.js"></script>
+    <script src="banhmy.js"></script>
 </body>
 
 </html>
